@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+body,html 
+{
+    margin:0;
+}
+
+body
+{
+    height:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header
+{
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+    display:flex;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    background:#292b2e;
+
+    a
+    {
+        text-decoration: none;
+        color: grey;
+    }
+
+    a.logo{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin:0;
+        padding: 0;
+
+        li a{
+            padding:1em;
+        }
+
+        li.home {
+            display: inline-block;
+            border: 2px solid rgb(15, 141, 199);
+            border-style: groove;
+            padding: 0;
+        }
+    }
+}
+
+.wrapper
+{
+    section {
+        text-align: center;
+        padding: 2em;
+
+        h1,h2 {
+            text-transform: uppercase;
+            margin:0;
+            padding: .75rem;
+
+        }
+
+        div.sub 
+        {
+            font-size: 1.4rem;
+            padding: 1rem;
+        }
+
+        .clipper {
+            overflow: hidden;
+        }
+    }
+
+    section.hero {
+        height: 60vh;
+        padding-top: 8em;
+        background: url('../Images/background1.jpg');
+        background-size: cover;
+
+    }
+
+    .content1 {
+        color: grey;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 80vh;
+        background-color: #292b2e;
+        text-align: center;
+
+        div.languages ul{
+            list-style-type: none;
+        }
+        div.languages h1 {
+            display: inline-block;
+            border: 4px solid rgb(15, 141, 199);
+            border-style: outset;
+            padding: .5em;
+        }
+        div.languages ul li {
+            padding-bottom: 1em;
+        }
+        //------------------------
+        div.skills ul{
+            list-style-type: none;
+        }
+    
+        div.skills ul li {
+            padding-bottom: 1em;
+        }
+        div.skills h1 {
+            display: inline-block;
+            border: 4px solid rgb(15, 141, 199);
+            border-style: inset;
+            padding: .5em;
+        }
+    }
+
+    
+
+    .content2 {
+        padding-top: .5em;
+        color: grey;
+        height: 80vh;
+        background-color: #202124;
+        text-align: center;
+
+        ul{
+            list-style-type: none;
+        }
+    
+        ul li {
+            padding-bottom: 1em;
+        }
+
+    }
+
+    .content3 {
+        padding-top: .5em;
+        color: grey;
+        height: 80vh;
+        background-color: rgb(29, 33, 48);
+        text-align: center;
+    }
+
+    .contact {
+        padding-top: .5em;
+        color: grey;
+        height: 30vh;
+        background-color: rgb(54, 62, 90);
+        text-align: center;
+    }
+}
+
+
+//For Whole website
+@media screen and (min-width: 601px) {
+    .wrapper {
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      font-size: 20px;
+    }
+  }
+
+  //For Landing Page
+  @media screen and (min-width: 601px) {
+    .hero {
+      font-size: 45px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .hero {
+      font-size: 30px;
+    }
+  }
